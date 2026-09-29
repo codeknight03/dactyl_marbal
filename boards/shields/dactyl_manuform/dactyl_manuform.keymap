@@ -36,10 +36,10 @@
             display-name = "NumNav";
             bindings = <
             &trans         &trans    &trans   &trans    &trans    &trans &trans                    &trans  &trans    &trans    &trans    &trans    &trans    &trans
-            &trans         &kp N7    &kp N8   &kp N9    &kp FSLH  &kp ASTRK &trans                  &trans  &trans    &kp HOME  &kp UP    &kp END   &kp PG_UP &trans
-            &trans         &kp N4    &kp N5   &kp N6    &kp MINUS &kp PLUS &trans &trans &trans &trans &trans &trans &trans    &kp LEFT  &kp DOWN  &kp RIGHT &kp PG_DN &trans
-            &trans         &kp N1    &kp N2   &kp N3    &kp DOT   &kp EQUAL                  &trans &trans               &trans    &trans    &trans    &trans    &trans    &trans
-            &trans         &trans    &trans   &trans    &trans    &kp N0          &trans   &trans   &trans   &trans          &trans   &trans    &trans    &trans    &trans    &trans
+            &trans         &kp HOME  &kp UP   &kp END   &kp PG_UP &trans  &trans                  &trans  &kp N7    &kp N8    &kp N9    &kp FSLH  &kp ASTRK &trans
+            &trans         &kp LEFT  &kp DOWN &kp RIGHT &kp PG_DN &trans  &trans &trans &trans &trans &trans &trans &kp N4    &kp N5    &kp N6    &kp MINUS &kp PLUS  &trans
+            &trans         &trans    &trans   &trans    &trans    &trans                    &trans &trans               &kp N1    &kp N2    &kp N3    &kp DOT   &kp EQUAL &trans
+            &trans         &trans    &trans   &trans    &trans    &trans         &trans   &trans   &kp N0   &trans          &trans   &trans    &trans    &trans    &trans    &trans
             >;
         };
 
