@@ -33,13 +33,14 @@
         };
 
         lower_layer {
-            display-name = "NumNav";
+            display-name = "Number";
+            // Same positions as the Cheapino NUM layer: digits on the top letter row, mods on J K L ;, Cmd+Shift+4 on B, Alt on Space.
             bindings = <
-            &trans         &trans    &trans   &trans    &trans    &trans &trans                    &trans  &trans    &trans    &trans    &trans    &trans    &trans
-            &trans         &kp HOME  &kp UP   &kp END   &kp PG_UP &trans  &trans                  &trans  &kp N7    &kp N8    &kp N9    &kp FSLH  &kp ASTRK &trans
-            &trans         &kp LEFT  &kp DOWN &kp RIGHT &kp PG_DN &trans  &trans &trans &trans &trans &trans &trans &kp N4    &kp N5    &kp N6    &kp MINUS &kp PLUS  &trans
-            &trans         &trans    &trans   &trans    &trans    &trans                    &trans &trans               &kp N0    &kp N1    &kp N2    &kp N3    &kp DOT   &kp EQUAL
-            &trans         &trans    &trans   &trans    &trans    &trans         &trans   &trans   &trans   &trans          &trans   &trans    &trans    &trans    &trans    &trans
+            &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+            &trans &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &trans &trans &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &trans
+            &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &kp RSHFT &kp RGUI &kp RALT &kp RCTRL &trans
+            &trans &trans &trans &trans &trans &kp LS(LG(N4)) &trans &trans &trans &trans &trans &trans &trans &trans
+            &trans &trans &trans &trans &trans &kp LALT &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
             >;
         };
 
@@ -58,12 +59,13 @@
 
         adjust_layer {
             display-name = "Adjust";
+            // Same positions as the Cheapino Adjust/nav layer: WASD arrows left, F-keys right; Bluetooth on the number row.
             bindings = <
-            &kp F1         &kp F2    &kp F3   &kp F4    &kp F5    &kp F6 &trans                    &trans  &kp F7    &kp F8    &kp F9    &kp F10   &kp F11   &kp F12
-            &bt BT_CLR     &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &trans   &trans  &trans    &trans    &trans    &trans    &trans    &trans
-            &trans         &trans    &trans   &trans    &trans    &trans  &trans &trans &trans &trans &trans &trans &trans    &trans    &trans    &trans    &trans    &trans
-            &trans         &trans    &trans   &trans    &trans    &trans              &trans   &trans               &trans    &trans    &trans    &trans    &trans    &trans
-            &trans         &trans    &trans   &trans    &trans    &trans        &trans   &trans   &trans   &trans          &trans   &trans    &trans    &trans    &trans    &trans
+            &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &trans &trans &trans &trans &trans &trans &trans &trans
+            &trans &kp HOME &kp UP &kp END &kp PG_UP &kp CAPS &trans &trans &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &trans
+            &trans &kp LEFT &kp DOWN &kp RIGHT &kp PG_DN &kp DEL &trans &trans &trans &trans &trans &trans &kp F11 &kp RSHFT &kp RGUI &kp RALT &kp RCTRL &trans
+            &trans &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE &kp F12 &bootloader &trans &trans &trans &kp F6 &kp F7 &kp F8 &kp F9 &kp F10
+            &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
             >;
         };
     };
