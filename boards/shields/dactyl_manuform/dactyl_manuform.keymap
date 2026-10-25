@@ -38,19 +38,21 @@
             &trans         &trans    &trans   &trans    &trans    &trans &trans                    &trans  &trans    &trans    &trans    &trans    &trans    &trans
             &trans         &kp HOME  &kp UP   &kp END   &kp PG_UP &trans  &trans                  &trans  &kp N7    &kp N8    &kp N9    &kp FSLH  &kp ASTRK &trans
             &trans         &kp LEFT  &kp DOWN &kp RIGHT &kp PG_DN &trans  &trans &trans &trans &trans &trans &trans &kp N4    &kp N5    &kp N6    &kp MINUS &kp PLUS  &trans
-            &trans         &trans    &trans   &trans    &trans    &trans                    &trans &trans               &kp N1    &kp N2    &kp N3    &kp DOT   &kp EQUAL &trans
-            &trans         &trans    &trans   &trans    &trans    &trans         &trans   &trans   &kp N0   &trans          &trans   &trans    &trans    &trans    &trans    &trans
+            &trans         &trans    &trans   &trans    &trans    &trans                    &trans &trans               &kp N0    &kp N1    &kp N2    &kp N3    &kp DOT   &kp EQUAL
+            &trans         &trans    &trans   &trans    &trans    &trans         &trans   &trans   &trans   &trans          &trans   &trans    &trans    &trans    &trans    &trans
             >;
         };
 
         raise_layer {
             display-name = "Symbol";
+            // Same finger positions as the Cheapino SYM layer. Right bottom row sits under
+            // H J K L ; physically (the N key is one column further in), so it starts at M.
             bindings = <
-            &kp GRAVE      &kp EXCL  &kp AT   &kp HASH  &kp DLLR  &kp PRCNT &trans                  &trans  &kp CARET &kp AMPS  &kp ASTRK &kp LPAR  &kp RPAR  &kp UNDER
-            &trans         &kp EXCL  &kp LT   &kp GT    &kp PLUS  &kp MINUS &trans                  &trans  &kp LBRC  &kp LPAR  &kp RPAR  &kp LBKT  &kp RBKT  &kp RBRC
-            &trans         &kp AMPS  &kp PIPE &kp BSLH  &kp TILDE &kp GRAVE &trans &trans &trans &trans &trans &trans &kp DLLR  &kp EQUAL &kp COLON &kp DQT   &kp UNDER &kp CARET
-            &trans         &kp AT    &kp HASH &kp PRCNT &kp SEMI  &kp SQT                &trans   &trans               &kp UNDER &kp ASTRK &kp PRCNT &kp FSLH  &kp QMARK &kp COMMA
-            &trans         &trans    &trans   &trans    &trans    &trans        &trans   &trans   &trans   &trans          &trans   &trans    &trans    &trans    &trans    &trans
+            &trans         &trans    &trans   &trans    &trans    &trans     &trans                  &trans  &trans    &trans    &trans    &trans    &trans    &trans
+            &trans         &kp EXCL  &kp AT   &kp HASH  &kp DLLR  &kp PRCNT  &trans                  &trans  &kp CARET &kp AMPS  &kp ASTRK &kp LPAR  &kp RPAR  &trans
+            &trans         &kp GRAVE &kp BSLH &kp COLON &kp LT    &kp GT     &trans &trans &trans &trans &trans &trans &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT  &kp SQT   &trans
+            &trans         &kp TILDE &kp PIPE &kp QMARK &trans    &kp LG(BSPC)            &trans   &trans               &trans    &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC  &kp DQT
+            &trans &trans &trans &trans &trans &trans &trans &trans &kp LA(BSPC) &trans &trans &trans &trans &trans &trans &trans
             >;
         };
 
